@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http.Features;
+using System.IO;
+using Microsoft.AspNetCore.Server.Kestrel.Core.Features;
 
 namespace KestrelLimitTest
 {
@@ -27,14 +29,13 @@ namespace KestrelLimitTest
             }
             app.Run(async (context) =>
             {
-                var res = context.Features.Get<IHttpMaxRequestBodySizeFeature>();
-                //res.MaxRequestBodySize = 1000;
-                for(int i = 0; i < 1; i++)
-                {
-                    var arr = new byte[20];
-                    context.Request.Body.Read(arr, 0, 20);
-                    await context.Response.WriteAsync("Hello World!");
+                context.Features.Get<IHttpMinResponseDataRateFeature>().MinDataRate = new Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate(5000, TimeSpan.FromSeconds(2));
+                Console.WriteLine("About to read data");
+
+                for (var i = 0; i < 1; i++) {
+                    await context.Response.WriteAsync("Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!", context.RequestAborted);
                 }
+                Console.WriteLine("Done with request");
             });
         }
     }

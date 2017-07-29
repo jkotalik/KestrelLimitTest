@@ -28,7 +28,7 @@ namespace KestrelLimitTest
 
                     // Test Default, below default, above default
                     //options.Limits.MaxRequestBodySize = 3000000; // 2.s86 MB
-                    //options.Limits.MinResponseDataRate = new MinDataRate(100, gracePeriod: TimeSpan.FromSeconds(5));
+                    options.Limits.MinRequestBodyDataRate = new MinDataRate(10000, gracePeriod: TimeSpan.FromSeconds(2));
                     //options.Limits.MinRequestBodyDataRate = null;
                 })
                 .Build();
