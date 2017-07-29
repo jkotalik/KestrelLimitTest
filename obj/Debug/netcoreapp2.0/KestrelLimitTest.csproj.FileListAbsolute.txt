@@ -1,0 +1,11 @@
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\bin\Debug\netcoreapp2.0\KestrelLimitTest.deps.json
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\bin\Debug\netcoreapp2.0\KestrelLimitTest.runtimeconfig.json
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\bin\Debug\netcoreapp2.0\KestrelLimitTest.runtimeconfig.dev.json
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\bin\Debug\netcoreapp2.0\KestrelLimitTest.dll
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\obj\Debug\netcoreapp2.0\KestrelLimitTest.csprojResolveAssemblyReference.cache
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\obj\Debug\netcoreapp2.0\KestrelLimitTest.csproj.CoreCompileInputs.cache
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\obj\Debug\netcoreapp2.0\KestrelLimitTest.AssemblyInfoInputs.cache
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\obj\Debug\netcoreapp2.0\KestrelLimitTest.AssemblyInfo.cs
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\bin\Debug\netcoreapp2.0\KestrelLimitTest.pdb
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\obj\Debug\netcoreapp2.0\KestrelLimitTest.dll
+C:\Users\Justin\source\repos\KestrelLimitTest\KestrelLimitTest\obj\Debug\netcoreapp2.0\KestrelLimitTest.pdb
